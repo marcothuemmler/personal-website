@@ -1,0 +1,80 @@
+nav {
+  margin: 50px;
+  padding: 40px 0;
+  width: var(--sidebar-width);
+  height: auto;
+  background-color: var(--container-background-color);
+  position: fixed;
+  z-index: 1;
+  border-radius: var(--container-border-radius);
+  overflow-x: hidden;
+  box-shadow: 5px 0 12px rgba(73, 73, 73, 0.49);
+}
+
+.profile_picture {
+  height: 200px;
+  width: auto;
+  aspect-ratio: 1;
+  margin: 40px auto;
+  object-fit: cover;
+  overflow: hidden;
+  border: 1px rgba(245, 245, 245, 0.35);
+  border-radius: 50%;
+}
+
+.profile_picture img {
+  max-width: 100%;
+  height: auto;
+}
+
+li a {
+  text-decoration: none;
+  color: var(--link-color);
+  display: block;
+  padding: 12px 24px;
+  transition: 0.2s;
+  margin: 10px;
+}
+
+nav a:hover, nav .nav_links .active_link:hover {
+  color: var(--link-hover-color);
+}
+
+.nav_links {
+  margin: 0;
+  list-style: none;
+  color: #363636;
+}
+
+nav .nav_links .active_link {
+  padding: 12px 24px;
+  display: block;
+  color: var(--title-color);
+  background-color: var(--link-active-pill-color);
+  border-radius: 12px;
+  box-shadow: 2px 4px 6px rgba(54, 54, 54, 0.2);
+}
+
+.row {
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+.row fa-icon {
+  font-size: xx-large;
+  color: var(--link-color);
+}
+
+.sidebar_title {
+  color: var(--title-color);
+  font-size: large;
+  margin: auto;
+  text-align: center;
+}
+
+.sidebar_subtitle {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: small;
+  margin: 6px auto 0 auto;
+  text-align: center;
+}

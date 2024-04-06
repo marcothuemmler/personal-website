@@ -1,0 +1,10 @@
+.wrapper {
+  border-radius: var(--container-border-radius);
+  background-color: var(--container-background-color);
+  border: rgba(255, 255, 255, 0.46) 1px solid;
+  color: var(--title-color);
+  min-width: 1000px;
+  padding: 100px;
+  margin: 50px 50px auto 50px;
+  box-shadow: 5px 0 12px rgba(73, 73, 73, 0.49);
+}

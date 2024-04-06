@@ -1,0 +1,29 @@
+<nav>
+  <div class="profile_picture">
+    <img ngSrc="assets/images/profile.jpeg" alt="user image" width="768" height="1022">
+  </div>
+  <p class="sidebar_title">Marco Thümmler</p>
+  <p class="sidebar_subtitle"> Full-Stack Software Engineer</p>
+  <app-divider/>
+  <ul class="nav_links">
+    <li><a routerLink="" routerLinkActive="active_link" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+    <li><a routerLink="resume" routerLinkActive="active_link">Resumé</a></li>
+    <li><a routerLink="about" routerLinkActive="active_link">About</a></li>
+    <li><a routerLink="contact" routerLinkActive="active_link">Contact</a></li>
+  </ul>
+  <app-divider/>
+  <div class="row">
+    <a href="https://github.com/marcothuemmler">
+      <fa-icon [icon]="faGithub"></fa-icon>
+    </a>
+    <a href="https://linkedin.com/in/marcothuemmler">
+      <fa-icon [icon]="faLinkedin"></fa-icon>
+    </a>
+    <a href="https://xing.com/profile/marco_thuemmler3">
+      <fa-icon [icon]="faXing"></fa-icon>
+    </a>
+    <a href="https://gitlab.com/marco.thuemmler">
+      <fa-icon [icon]="faGitlab"></fa-icon>
+    </a>
+  </div>
+</nav>
