@@ -7,13 +7,17 @@ nav {
   position: fixed;
   z-index: 1;
   border-radius: var(--container-border-radius);
-  overflow-x: hidden;
+  overflow: hidden;
+  max-height: calc(100vh - 100px);
   box-shadow: 5px 0 12px rgba(73, 73, 73, 0.49);
+  display: flex;
+  flex-direction: column;
 }
 
 .profile_picture {
+  flex-shrink: 0;
   height: 200px;
-  width: auto;
+  width: 200px;
   aspect-ratio: 1;
   margin: 40px auto;
   object-fit: cover;
@@ -28,16 +32,26 @@ nav {
 }
 
 li a {
+  font-size: 0.9em;
   text-decoration: none;
   color: var(--link-color);
   display: block;
   padding: 12px 24px;
-  transition: 0.2s;
+  transition: 0.3s;
   margin: 10px;
 }
 
-nav a:hover, nav .nav_links .active_link:hover {
+.row fa-icon:hover, nav a:hover, nav .nav_links .active_link:hover {
   color: var(--link-hover-color);
+}
+
+nav a:hover {
+  background-color: var(--link-hover-pill-color);
+  border-radius: 12px;
+}
+
+.nav_container {
+  overflow: auto;
 }
 
 .nav_links {
@@ -56,18 +70,19 @@ nav .nav_links .active_link {
 }
 
 .row {
-  margin: auto;
   justify-content: space-evenly;
 }
 
 .row fa-icon {
   font-size: xx-large;
   color: var(--link-color);
+  transition: 0.3s;
 }
 
 .sidebar_title {
   color: var(--title-color);
   font-size: large;
+  font-weight: 500;
   margin: auto;
   text-align: center;
 }
@@ -75,6 +90,11 @@ nav .nav_links .active_link {
 .sidebar_subtitle {
   color: rgba(255, 255, 255, 0.5);
   font-size: small;
+  font-weight: 400;
   margin: 6px auto 0 auto;
   text-align: center;
+}
+
+.sidebar_title, .sidebar_subtitle {
+  cursor: default;
 }

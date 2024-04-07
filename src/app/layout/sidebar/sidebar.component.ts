@@ -4,6 +4,7 @@ import { NgOptimizedImage } from "@angular/common";
 import { FaIconComponent } from "@fortawesome/angular-fontawesome";
 import { faGithub, faGitlab, faLinkedin, faXing } from "@fortawesome/free-brands-svg-icons";
 import { DividerComponent } from "../divider/divider.component";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-sidebar',
@@ -23,4 +24,5 @@ export class SidebarComponent {
   protected readonly faLinkedin = faLinkedin;
   protected readonly faXing = faXing;
   protected readonly faGitlab = faGitlab;
+  protected readonly faLocationDot = faLocationDot;
 }

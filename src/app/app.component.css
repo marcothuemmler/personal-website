@@ -2,12 +2,11 @@
   justify-content: center;
   flex-direction: row;
   display: flex;
-  background-color: var(--background-color);
-  height: auto;
   min-height: 100vh;
 }
 
 .content {
+  width: min(1500px, 90vw);
   flex: 1;
   padding-left: calc(var(--sidebar-width) + 50px);
 }

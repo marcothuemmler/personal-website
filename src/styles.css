@@ -16,11 +16,17 @@
   --background-color: rgba(97, 147, 154, 0.50);
   --container-background-color: rgba(62, 79, 79, 0.7);
   --container-border-radius: 20px;
+  --container-border: rgba(255, 255, 255, 0.46) 1px solid;
   --sidebar-width: 320px;
   --link-color: #d5dee7;
   --link-hover-color: white;
   --title-color: whitesmoke;
   --link-active-pill-color: #466679;
+  --link-hover-pill-color: rgba(70, 102, 121, 0.19);
+}
+
+body {
+  background-color: var(--background-color);
 }
 
 .row {
