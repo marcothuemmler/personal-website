@@ -1,0 +1,16 @@
+.resume_container {
+  overflow: auto;
+}
+
+.section_title {
+  font-size: large;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-left: 24px;
+}
+
+.section-title-icon {
+  color: #c0e2ef;
+  margin-right: 16px;
+  font-size: large;
+}

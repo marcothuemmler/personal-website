@@ -1,4 +1,5 @@
 .paragraph {
+  font-size: 0.95em;
   line-height: 1.7em;
   padding-bottom: 0.7em;
   font-weight: 400;
@@ -9,11 +10,6 @@ a {
   color: ghostwhite;
   font-weight: 600;
   cursor: pointer;
-}
-
-h2 {
-  padding-bottom: 40px;
-  font-weight: 500;
 }
 
 p, .paragraph, h2 {

@@ -1,0 +1,17 @@
+<div class="resume_stage_container">
+  <div class="row">
+    <div class="bullet_point_outer">
+      <div class="bullet_point_inner"></div>
+    </div>
+    <div class="resume_stage_title_spacer"></div>
+    <div class="column">
+      <p class="resume_stage_title">{{ title }}</p>
+      <p class="resume_stage_timeline">{{ timeframe }}</p>
+      <div *ngIf="position" class="row" style="margin-bottom: 5px;">
+        <span style="font-size: small; margin-right: 10px; font-weight: 500;">Position:</span>
+        <p class="resume_stage_description">{{ position }}</p>
+      </div>
+      <p *ngFor="let item of description" class="resume_stage_description">{{ item }}</p>
+    </div>
+  </div>
+</div>

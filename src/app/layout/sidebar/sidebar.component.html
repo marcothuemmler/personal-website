@@ -1,13 +1,26 @@
-<nav>
-  <div class="profile_picture">
-    <img ngSrc="assets/images/profile.jpeg" alt="user image" width="768" height="1022">
-  </div>
+<nav role="navigation">
+  <app-profile-picture profilePicture="assets/images/profile.jpeg"/>
   <p class="sidebar_title">Marco Thümmler</p>
-  <p class="sidebar_subtitle">Full-Stack Software Engineer</p>
+  <p class="sidebar_subtitle professional_title">Full-Stack Software Engineer</p>
   <p class="sidebar_subtitle">
     <fa-icon [icon]="faLocationDot" style="margin-right: 5px"/>
     Constance, Germany
   </p>
+  <app-divider/>
+  <div class="row social_links">
+    <a href="https://github.com/marcothuemmler" target="_blank" class="social_link_icon">
+      <fa-icon [icon]="faGithub"/>
+    </a>
+    <a href="https://linkedin.com/in/marcothuemmler" target="_blank" class="social_link_icon">
+      <fa-icon [icon]="faLinkedin"/>
+    </a>
+    <a href="https://xing.com/profile/marco_thuemmler3" target="_blank" class="social_link_icon">
+      <fa-icon [icon]="faXing"/>
+    </a>
+    <a href="https://gitlab.com/marco.thuemmler" target="_blank" class="social_link_icon">
+      <fa-icon [icon]="faGitlab"/>
+    </a>
+  </div>
   <app-divider/>
   <div class="nav_container">
     <ul class="nav_links">
@@ -16,20 +29,5 @@
       <li><a routerLink="about" routerLinkActive="active_link">About</a></li>
       <li><a routerLink="contact" routerLinkActive="active_link">Contact</a></li>
     </ul>
-    <app-divider/>
-    <div class="row">
-      <a href="https://github.com/marcothuemmler" target="_blank">
-        <fa-icon [icon]="faGithub"/>
-      </a>
-      <a href="https://linkedin.com/in/marcothuemmler" target="_blank">
-        <fa-icon [icon]="faLinkedin"/>
-      </a>
-      <a href="https://xing.com/profile/marco_thuemmler3" target="_blank">
-        <fa-icon [icon]="faXing"/>
-      </a>
-      <a href="https://gitlab.com/marco.thuemmler" target="_blank">
-        <fa-icon [icon]="faGitlab"/>
-      </a>
-    </div>
   </div>
 </nav>

@@ -2,11 +2,16 @@
   justify-content: center;
   flex-direction: row;
   display: flex;
-  min-height: 100vh;
 }
 
 .content {
-  width: min(1500px, 90vw);
-  flex: 1;
-  padding-left: calc(var(--sidebar-width) + 50px);
+  width: min(1000px, 90vw);
+}
+
+@media only screen and (max-width: 1024px) {
+  .content {
+    min-width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
 }

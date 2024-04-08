@@ -3,8 +3,9 @@ import { RouterLink, RouterLinkActive } from "@angular/router";
 import { NgOptimizedImage } from "@angular/common";
 import { FaIconComponent } from "@fortawesome/angular-fontawesome";
 import { faGithub, faGitlab, faLinkedin, faXing } from "@fortawesome/free-brands-svg-icons";
-import { DividerComponent } from "../divider/divider.component";
+import { DividerComponent } from "../../components/divider/divider.component";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { ProfilePictureComponent } from "../../components/profile-picture/profile-picture.component";
 
 @Component({
   selector: 'app-sidebar',
@@ -14,7 +15,8 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
     RouterLinkActive,
     NgOptimizedImage,
     FaIconComponent,
-    DividerComponent
+    DividerComponent,
+    ProfilePictureComponent
   ],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.css'

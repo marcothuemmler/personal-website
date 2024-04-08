@@ -1,0 +1,75 @@
+<h2 class="wrapper_header">Resumé</h2>
+<app-divider marginLeft="0" marginRight="0" marginBottom="24"/>
+<div class="resume_container">
+  <div class="row section_title">
+    <fa-icon [icon]="faBookOpenReader" class="section-title-icon"/>
+    <p>Education</p>
+  </div>
+  <app-resume-stage
+    title="Constance Univerity Of Applied Sciences"
+    timeframe="March 2018 - February 2024"
+    [description]="['Applied Computer Science (B.Sc.)', 'Specialization: Software Engineering']"
+  />
+  <app-resume-stage
+    title="Constance Univerity Of Applied Sciences"
+    timeframe="March 2017 - February 2018"
+    [description]="[
+    'Studienkolleg (preparatory course for university studies in Germany for foreign students)',
+    'Attained Subject-Restricted University Entrance Qualification in Germany.'
+    ]"
+  />
+  <app-resume-stage
+    title="Colegio Privado Divina Misericordia"
+    timeframe="2010-2014"
+    [description]="['Bachillerato Científico en Ciencias Naturales (Scientific Baccalaureate in Natural Sciences)']"
+  />
+  <div class="row section_title">
+    <fa-icon [icon]="faScrewdriverWrench" class="section-title-icon"/>
+    <p>Experience</p>
+  </div>
+  <app-resume-stage
+    title="klartext.app GbR"
+    position="Working Student"
+    timeframe="March 2023 - January 2024"
+    [description]="['Frontend development in Flutter with focus on UX/UI optimization and API integration']"
+  />
+  <app-resume-stage
+    title="INNOSYSTEC GmbH"
+    position="Working Student"
+    timeframe="September 2019 - November 2021"
+    [description]="
+    ['JavaScript/React frontend development',
+    'Backend development in Java using Spring Boot framework and Hibernate',
+    'Creation and management of CI/CD pipelines using Jenkins'
+    ]"
+  />
+  <app-resume-stage
+    title="Entrepreneurship in Paraguay"
+    position="Owner"
+    timeframe="2012 - 2015"
+    [description]="['Computer Repair Service', 'Technical Service', 'Retail Sales']"
+  />
+  <app-resume-stage
+    title="Service Informática"
+    position="Service Technician"
+    timeframe="2010 - 2012"
+    [description]="['Computer Repair Service', 'Customer Care']"
+  />
+  <div class="row section_title">
+    <fa-icon [icon]="faGraduationCap" class="section-title-icon"/>
+    <p>Academic Projects</p>
+  </div>
+  <app-resume-stage
+    title="Konzeption und Implementierung eines Moduls zur Systemischen Konsensierung im Kontext einer Cross-Platform Applikation"
+    timeframe="Grade: 1.3"
+    [description]="[
+    'Frontend development in Flutter with focus on UX/UI optimization and API integration',
+    'Use case analysis and requirements analysis, integration of quality criteria according to ISO 25010.'
+    ]"
+  />
+  <app-resume-stage
+    title="yourimpact.eu"
+    timeframe="Semester project"
+    [description]="['Development and enhancement of existing software solution using a full-stack approach, using Flutter for frontend and NestJS for backend, while applying agile methodologies.',]"
+  />
+</div>

@@ -1,0 +1,14 @@
+.profile_picture {
+  flex-shrink: 0;
+  aspect-ratio: 1;
+  margin: 40px auto;
+  object-fit: cover;
+  overflow: clip;
+  border: 8px solid rgba(245, 245, 245, 0.08);
+  border-radius: 50%;
+}
+
+.profile_picture img {
+  max-width: 100%;
+  height: auto;
+}

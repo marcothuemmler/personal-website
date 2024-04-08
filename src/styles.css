@@ -18,10 +18,11 @@
   --container-border-radius: 20px;
   --container-border: rgba(255, 255, 255, 0.46) 1px solid;
   --sidebar-width: 320px;
-  --link-color: #d5dee7;
+  --link-color: #c2cbd5;
   --link-hover-color: white;
   --title-color: whitesmoke;
-  --link-active-pill-color: #466679;
+  --subtitle-color: rgba(255, 255, 255, 0.55);
+  --link-active-pill-color: rgba(58, 97, 114, 0.95);
   --link-hover-pill-color: rgba(70, 102, 121, 0.19);
 }
 
@@ -37,4 +38,14 @@ body {
 .column {
   display: flex;
   flex-direction: column;
+}
+
+.wrapper_header {
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    background-color: #607274;
+  }
 }
